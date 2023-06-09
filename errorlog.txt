@@ -1,0 +1,151 @@
+<kernel>:27:23: warning: if statement has empty body
+        if(isfinite(a[idx])) ;
+                             ^
+<kernel>:27:23: note: put the semicolon on a separate line to silence this warning
+<kernel>:206:37: error: use of undeclared identifier 'length_bot'; did you mean 'length_top'?
+        if (isfinite(bot_len) && bot_len > length_bot[idx])
+                                           ^~~~~~~~~~
+                                           length_top
+<kernel>:190:107: note: 'length_top' declared here
+__kernel void pullt0(volatile __global int* pos_x, volatile __global unsigned int* pos_y, __global float* length_top)
+                                                                                                          ^
+<kernel>:208:21: error: use of undeclared identifier 'length_bot'; did you mean 'length_top'?
+                extra = bot_len / length_bot[idx] - 1;
+                                  ^~~~~~~~~~
+                                  length_top
+<kernel>:190:107: note: 'length_top' declared here
+__kernel void pullt0(volatile __global int* pos_x, volatile __global unsigned int* pos_y, __global float* length_top)
+                                                                                                          ^
+<kernel>:221:18: error: redefinition of 'atom_bot_x'
+        union AtomFloat atom_bot_x, atom_bot_y;
+                        ^
+<kernel>:198:18: note: previous definition is here
+        union AtomFloat atom_bot_x, atom_bot_y;
+                        ^
+<kernel>:221:30: error: redefinition of 'atom_bot_y'
+        union AtomFloat atom_bot_x, atom_bot_y;
+                                    ^
+<kernel>:198:30: note: previous definition is here
+        union AtomFloat atom_bot_x, atom_bot_y;
+                                    ^
+<kernel>:226:8: error: redefinition of 'bot_diff_x'
+        float bot_diff_x = atom_bot_x.f - atom_pos_x.f, bot_diff_y = atom_bot_y.f - atom_pos_y.f;
+              ^
+<kernel>:203:8: note: previous definition is here
+        float bot_diff_x = atom_bot_x.f - atom_pos_x.f, bot_diff_y = atom_bot_y.f - atom_pos_y.f;
+              ^
+<kernel>:226:50: error: redefinition of 'bot_diff_y'
+        float bot_diff_x = atom_bot_x.f - atom_pos_x.f, bot_diff_y = atom_bot_y.f - atom_pos_y.f;
+                                                        ^
+<kernel>:203:50: note: previous definition is here
+        float bot_diff_x = atom_bot_x.f - atom_pos_x.f, bot_diff_y = atom_bot_y.f - atom_pos_y.f;
+                                                        ^
+<kernel>:227:8: error: redefinition of 'bot_len'
+        float bot_len = sqrt(bot_diff_x * bot_diff_x + bot_diff_y * bot_diff_y);                                
+              ^
+<kernel>:204:8: note: previous definition is here
+        float bot_len = sqrt(bot_diff_x * bot_diff_x + bot_diff_y * bot_diff_y);                                
+              ^
+<kernel>:229:37: error: use of undeclared identifier 'length_bot'; did you mean 'length_top'?
+        if (isfinite(bot_len) && bot_len > length_bot[idx])
+                                           ^~~~~~~~~~
+                                           length_top
+<kernel>:190:107: note: 'length_top' declared here
+__kernel void pullt0(volatile __global int* pos_x, volatile __global unsigned int* pos_y, __global float* length_top)
+                                                                                                          ^
+<kernel>:231:21: error: use of undeclared identifier 'length_bot'; did you mean 'length_top'?
+                extra = bot_len / length_bot[idx] - 1;
+                                  ^~~~~~~~~~
+                                  length_top
+<kernel>:190:107: note: 'length_top' declared here
+__kernel void pullt0(volatile __global int* pos_x, volatile __global unsigned int* pos_y, __global float* length_top)
+                                                                                                          ^
+<kernel>:261:37: error: use of undeclared identifier 'length_bot'; did you mean 'length_top'?
+        if (isfinite(bot_len) && bot_len > length_bot[idx])
+                                           ^~~~~~~~~~
+                                           length_top
+<kernel>:245:107: note: 'length_top' declared here
+__kernel void pullt1(volatile __global int* pos_x, volatile __global unsigned int* pos_y, __global float* length_top)
+                                                                                                          ^
+<kernel>:263:21: error: use of undeclared identifier 'length_bot'; did you mean 'length_top'?
+                extra = bot_len / length_bot[idx] - 1;
+                                  ^~~~~~~~~~
+                                  length_top
+<kernel>:245:107: note: 'length_top' declared here
+__kernel void pullt1(volatile __global int* pos_x, volatile __global unsigned int* pos_y, __global float* length_top)
+                                                                                                          ^
+<kernel>:276:18: error: redefinition of 'atom_bot_x'
+        union AtomFloat atom_bot_x, atom_bot_y;
+                        ^
+<kernel>:253:18: note: previous definition is here
+        union AtomFloat atom_bot_x, atom_bot_y;
+                        ^
+<kernel>:276:30: error: redefinition of 'atom_bot_y'
+        union AtomFloat atom_bot_x, atom_bot_y;
+                                    ^
+<kernel>:253:30: note: previous definition is here
+        union AtomFloat atom_bot_x, atom_bot_y;
+                                    ^
+<kernel>:281:8: error: redefinition of 'bot_diff_x'
+        float bot_diff_x = atom_bot_x.f - atom_pos_x.f, bot_diff_y = atom_bot_y.f - atom_pos_y.f;
+              ^
+<kernel>:258:8: note: previous definition is here
+        float bot_diff_x = atom_bot_x.f - atom_pos_x.f, bot_diff_y = atom_bot_y.f - atom_pos_y.f;
+              ^
+<kernel>:281:50: error: redefinition of 'bot_diff_y'
+        float bot_diff_x = atom_bot_x.f - atom_pos_x.f, bot_diff_y = atom_bot_y.f - atom_pos_y.f;
+                                                        ^
+<kernel>:258:50: note: previous definition is here
+        float bot_diff_x = atom_bot_x.f - atom_pos_x.f, bot_diff_y = atom_bot_y.f - atom_pos_y.f;
+                                                        ^
+<kernel>:282:8: error: redefinition of 'bot_len'
+        float bot_len = sqrt(bot_diff_x * bot_diff_x + bot_diff_y * bot_diff_y);                                
+              ^
+<kernel>:259:8: note: previous definition is here
+        float bot_len = sqrt(bot_diff_x * bot_diff_x + bot_diff_y * bot_diff_y);                                
+              ^
+<kernel>:284:37: error: use of undeclared identifier 'length_bot'; did you mean 'length_top'?
+        if (isfinite(bot_len) && bot_len > length_bot[idx])
+                                           ^~~~~~~~~~
+                                           length_top
+<kernel>:245:107: note: 'length_top' declared here
+__kernel void pullt1(volatile __global int* pos_x, volatile __global unsigned int* pos_y, __global float* length_top)
+                                                                                                          ^
+<kernel>:286:21: error: use of undeclared identifier 'length_bot'; did you mean 'length_top'?
+                extra = bot_len / length_bot[idx] - 1;
+                                  ^~~~~~~~~~
+                                  length_top
+<kernel>:245:107: note: 'length_top' declared here
+__kernel void pullt1(volatile __global int* pos_x, volatile __global unsigned int* pos_y, __global float* length_top)
+                                                                                                          ^
+<kernel>:331:18: error: redefinition of 'atom_bot_x'
+        union AtomFloat atom_bot_x, atom_bot_y;
+                        ^
+<kernel>:308:18: note: previous definition is here
+        union AtomFloat atom_bot_x, atom_bot_y;
+                        ^
+<kernel>:331:30: error: redefinition of 'atom_bot_y'
+        union AtomFloat atom_bot_x, atom_bot_y;
+                                    ^
+<kernel>:308:30: note: previous definition is here
+        union AtomFloat atom_bot_x, atom_bot_y;
+                                    ^
+<kernel>:336:8: error: redefinition of 'bot_diff_x'
+        float bot_diff_x = atom_bot_x.f - atom_pos_x.f, bot_diff_y = atom_bot_y.f - atom_pos_y.f;
+              ^
+<kernel>:313:8: note: previous definition is here
+        float bot_diff_x = atom_bot_x.f - atom_pos_x.f, bot_diff_y = atom_bot_y.f - atom_pos_y.f;
+              ^
+<kernel>:336:50: error: redefinition of 'bot_diff_y'
+        float bot_diff_x = atom_bot_x.f - atom_pos_x.f, bot_diff_y = atom_bot_y.f - atom_pos_y.f;
+                                                        ^
+<kernel>:313:50: note: previous definition is here
+        float bot_diff_x = atom_bot_x.f - atom_pos_x.f, bot_diff_y = atom_bot_y.f - atom_pos_y.f;
+                                                        ^
+<kernel>:337:8: error: redefinition of 'bot_len'
+        float bot_len = sqrt(bot_diff_x * bot_diff_x + bot_diff_y * bot_diff_y);                                
+              ^
+<kernel>:314:8: note: previous definition is here
+        float bot_len = sqrt(bot_diff_x * bot_diff_x + bot_diff_y * bot_diff_y);                                
+              ^
+  
